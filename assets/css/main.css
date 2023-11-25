@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Caveat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Tangerine:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Barlow";
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  position: relative;
+  line-height: 29px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-out 0s;
+}
+
+button {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+.website-btn-1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000000;
+  background: #fcb424;
+  padding: 9.5px 34px;
+  text-decoration: none;
+  border-radius: 100px 100px 0px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-weight: 800;
+}
+.website-btn-1:hover {
+  background: #fff;
+}
+.website-btn-1::after {
+  border-radius: 100px 100px 0px;
+  background: #fff;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  z-index: -1;
+  right: 0;
+}
+.website-btn-1:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.website-btn-2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000000;
+  background: #fcb424;
+  padding: 9.5px 34px;
+  text-decoration: none;
+  border-radius: 0px 100px 100px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-weight: 800;
+}
+.top-banner .shape {
+  left: 0;
+  top: 0;
+}
+.website-header {
+  width: 100%;
+  z-index: 9;
+  padding: 30.5px 0px;
+}
+.top-banner {
+  background-image: url(../images/header-banner-bg.jpg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.header-banner {
+  padding-top: 2px;
+  z-index: 2;
+  position: relative;
+  -webkit-transform: translate(25px, -37px);
+  -ms-transform: translate(25px, -37px);
+  transform: translate(25px, -37px);
+}
+.banner-content .title {
+  text-transform: uppercase;
+  color: #fbb527;
+  line-height: 97px;
+  font-weight: 800;
+  font-size: 80px;
+}
+.banner-content p {
+  font-family: "Caveat", cursive;
+  color: #ffffff;
+  font-size: 30px;
+}
+.banner-content h2 {
+  color: #ffff;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.about-section .shape-section {
+  top: -20px;
+  z-index: 1;
+}
+.about-section .shape {
+  display: inline-block;
+  position: absolute;
+  top: -57px;
+  width: 100%;
+  left: 0;
+}
+.ab-section-heading h1 {
+  text-transform: uppercase;
+  line-height: 80px;
+  font-weight: 800;
+  font-size: 63px;
+}
+.ab-section-heading h1 span,
+.center-content h1 span {
+  color: #fbb527;
+}
+.about-section p {
+  font-weight: 500;
+  line-height: 1.7;
+}
+.center-content {
+  text-align: center;
+  background-color: #382e2c;
+}
+.center-content h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+}
+.center-content p {
+  font-weight: 500;
+  line-height: 1.7;
+  color: #fff;
+}
+.center-content .shape-section {
+  top: -20px;
+  z-index: 1;
+}
+.center-content .shape {
+  display: list-item;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  left: 0;
+  background-image: url(../images/wave-brown.png);
+  background-repeat: repeat-x;
+}
+.about-section {
+  background-image: url(../images/coffee-beans.png);
+  background-position: right;
+}
+@media (max-width: 575px) {
+  .banner-content .title {
+    font-size: 31px;
+    line-height: 34px;
+  }
+  .header-banner {
+    display: none;
+  }
+  .ab-section-heading h1 {
+    line-height: 46px;
+    font-size: 35px;
+  }
+  .center-content h1 {
+    font-size: 40px;
+  }
+  .about-section .shape {
+    top: -20px;
+  }
+  .top-banner {
+    padding-top: 160px;
+  }
+  .banner-content h2 {
+    font-size: 36px;
+  }
+  .website-btn-1 {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .header-banner {
+    display: none;
+  }
+  .website-btn-1 {
+    display: none;
+  }
+  .top-banner {
+    padding-top: 160px;
+  }
+  .about-section .shape {
+    top: -25px;
+  }
+}
